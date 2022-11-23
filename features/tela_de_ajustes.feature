@@ -2,14 +2,9 @@
 #enconding: UTF-8
   Feature: Apresentar opções de ajustes para o úsuario
 
-      @usr
+      @perfil
     Scenario: Apresentar Tela de Perfil do Usuario
-      Given que eu quero acessar a area de perfil
-      When eu clicar no botao de Ajustes
-      Then deve ser apresentado o menu para o perfil
-
-      @notificacao
-    Scenario: Apresentar Tela de Notificacoes
-      Given que eu quero ir para a tela de notificacoes
-      When eu clicar no botao de Ajustes
-      Then deve ser apresentado o menu para a tela de notificacoes
+      Given que eu esteja na tela principal do app
+      When eu clicar no icone de ajustes
+      And seguir para a tela de perfil
+      Then deve ser apresentado a tela para efetuar o login

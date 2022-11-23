@@ -1,19 +1,15 @@
-Given('que eu quero acessar a area de perfil') do
-  find_element(xpath: "//android.view.View[@content-desc='Ajustes Tab 4 of 4' or contains(@content-desc, 'Ajustes')]").displayed?
+Given('que eu esteja na tela principal do app') do
+  @ajustes.partida_screen
 end
 
-When('eu clicar no botao de Ajustes') do
-  find_element(xpath: "//android.view.View[@content-desc='Ajustes Tab 4 of 4' or contains(@content-desc, 'Ajustes')]").click
+When('eu clicar no icone de ajustes') do
+  @ajustes.ajustes_screen
 end
 
-Then('deve ser apresentado o menu para o perfil') do
-  find_element(xpath: "//android.view.View[@content-desc='Perfil Dados do usuário' or contains(@content-desc, 'Perfil')]").click
+When('seguir para a tela de perfil') do
+  @ajustes.perfil_screen
 end
 
-Given('que eu quero ir para a tela de notificacoes') do
-
-end
-
-Then('deve ser apresentado o menu para a tela de notificacoes') do
-
+Then('deve ser apresentado a tela para efetuar o login') do
+  @ajustes.login_screen
 end
