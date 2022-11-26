@@ -1,12 +1,15 @@
-require "allure-cucumber"
-require "appium_lib"
+require 'cucumber'
+require 'pry'
+require 'appium_lib'
 require 'selenium-webdriver'
-require "fileutils"
+require 'allure-cucumber'
+require_relative 'utils/utilsProject'
 
-#limpa os logs e relatorios dos testes
-FileUtils.rm_f(Dir.glob("allure_results/*.json"))
-FileUtils.rm_f(Dir.glob("allure_results/*.png"))
+platform_check
 
-caps = Appium.load_appium_txt file: File.expand_path("config/android/appium.txt", __dir__), verbose: true
-Appium::Driver.new(caps, true)
-Appium.promote_appium_methods Object
+def load_appium_configuration
+  Appium.load_appium_txt file: File.expand_path("#{Dir.pwd}/config/#{$platform}/appium.txt", __FILE__), verbose: true
+end
+
+$wait = Selenium::WebDriver::Wait.new(timeout: 60)
+Appium::Driver.new(load_appium_configuration, true)

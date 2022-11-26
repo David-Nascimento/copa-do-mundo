@@ -1,0 +1,16 @@
+android:
+  btnPartidas:
+    tipo_busca: "xpath"
+    value: "//android.widget.ImageView[@content-desc='Partidas Tab 3 of 4' or contains(@content-desc, 'Partidas')]"
+  btnAjustes:
+    tipo_busca: "xpath"
+    value: "//android.view.View[@content-desc='Ajustes Tab 4 of 4' or contains(@content-desc, 'Ajustes')]"
+  btnPerfil:
+    tipo_busca: "xpath"
+    value: "//android.view.View[@content-desc='Perfil Dados do usuário' or contains(@content-desc, 'Perfil')]"
+  telaPefil:
+    tipos_busca: "xpath"
+    value: "//android.view.View[@content-desc='Perfil']"
+  btnEntrar:
+    tipo_busca: "xpath"
+    value: "//android.widget.Button[@content-desc='Entrar']"
