@@ -6,9 +6,9 @@ def ios?
   $platform == 'ios'
 end
 
-def screenshot(step)
+def screenshot
   screenshot = $driver.screenshot("allure-results/#{$platform}/ss.png")
-  Allure.add_attachment(name: "#{@scenario_name} - #{step}", source: screenshot, type: Allure::ContentType::PNG)
+  Allure.add_attachment(name: "#{@scenario_name} ", source: screenshot, type: Allure::ContentType::PNG)
   File.delete("allure-results/#{$platform}/ss.png")
 end
 

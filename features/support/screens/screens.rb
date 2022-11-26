@@ -1,4 +1,4 @@
-class AjustesScreen
+class Screens
   def initialize
     get_screen_mappings "elements.yaml"
   end

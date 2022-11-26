@@ -1,13 +1,12 @@
 #language: en
 #enconding: UTF-8
-  Feature: Apresentar opções de ajustes para o úsuario
+  Feature: Tela de Partidas
 
     Background:
       Given carrego minha pagina de ajustes
 
-      @perfil
-    Scenario: Apresentar Tela de Perfil do Usuario
-      Given que eu esteja na tela principal do app
-#      When eu clicar no icone de ajustes
-#      And seguir para a tela de perfil
-#      Then deve ser apresentado a tela para efetuar o login
+      @partidas
+      Scenario: Tela de Partida
+        Given que eu esteja na tela principal do app
+        When estiver na tela de partidas
+        Then devo visualizar os jogos que irão ser transmitidos no dia

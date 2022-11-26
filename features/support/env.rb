@@ -1,6 +1,6 @@
-require 'cucumber'
-require 'pry'
 require 'appium_lib'
+require 'pry'
+require 'cucumber'
 require 'selenium-webdriver'
 require 'allure-cucumber'
 require_relative 'utils/utilsProject'
