@@ -1,0 +1,3 @@
+android: PLATFORM_NAME='android'
+ios: PLATFORM_NAME='ios'
+report: --format AllureCucumber::CucumberFormatter --out allure-results/android/

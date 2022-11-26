@@ -1,0 +1,20 @@
+android:
+  botao_ajustes:
+    tipo_busca: "xpath"
+    value: "//android.view.View[@content-desc='Ajustes Tab 4 of 4' or contains(@content-desc, 'Ajustes')]"
+  primeira_partida:
+    tipo_busca: "xpath"
+    value: "//*/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[1]"
+  ultima_partida:
+    tipo_busca: "xpath"
+    value: "//*/android.view.View[1]/android.view.View/android.view.View[2]/android.view.View/android.view.View/android.view.View/android.view.View/android.view.View[4]"
+  lances_partida:
+    tipo_busca: "xpath"
+    value: "//android.view.View[@content-desc='Lances Tab 1 of 2' or contains(@content-desc, 'Lances')]"
+  inicio_do_jogo:
+    tipo_busca: "xpath"
+    value: "//android.view.View[@content-desc='Início de jogo' or contains(@content-desc, 'Inicio do jogo')]"
+ios:
+  nome_elemento:
+    tipo_busca:
+    value:

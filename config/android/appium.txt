@@ -1,0 +1,13 @@
+[caps]
+automationName = "UIAutomator2"
+platformName = "Android"
+deviceName = "Pixel 4"
+app = "./app/app-release.apk"
+
+newCommandTimeout = 3600
+autoGrantPermissions = true
+
+[appium_lib]
+wait = 20
+debug = true
+export_session = true
